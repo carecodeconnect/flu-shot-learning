@@ -1,15 +1,15 @@
 # Flu Shot Learning
 
 ## Overview
-This repository contains the work for the "Flu Shot Learning: Predict H1N1 and Seasonal Flu Vaccines" competition hosted by Driven Data. The goal of this project is to predict how likely individuals are to receive their H1N1 and seasonal flu vaccines based upon various features collected in a survey.
+This repository contains the work for the [Flu Shot Learning: Predict H1N1 and Seasonal Flu Vaccines](https://www.drivendata.org/competitions/66/flu-shot-learning/page/210/) competition hosted by [Driven Data](https://www.drivendata.org/). The goal of this project is to predict how likely individuals are to receive their H1N1 and seasonal flu vaccines based upon various features collected in a survey.
 
 ## Data
-The dataset includes characteristics like behavioral responses, opinions, and personal information gathered from respondents. Some of the features have missing values, which are crucial for the predictive modeling aspect of the project.
+The dataset includes characteristics like behavioral responses, opinions, and personal information gathered from respondents. Some of the features have missing values, which became an important part of the Exploratory Data Analysis, with implications for how we understand the data.
 
 ![Heatmap of Missing Values](images/nan_heatmap.png)
 
 ## Predictive Models
-We employ machine learning models to predict the likelihood of vaccine uptake. Specifically, logistic regression models are used, addressing class imbalances where necessary.
+We employ machine learning models to predict the likelihood of vaccine uptake. Specifically, **logistic regression** models are used, addressing class imbalances where necessary. We used the [**Area Under the Receiver Operating Characteristic** (AUROC)](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) metric for evaluating the model.
 
 ## Repository Structure
 - `data/` - Contains the training and test datasets.
