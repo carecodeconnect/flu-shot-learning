@@ -3,10 +3,10 @@ import pandas as pd
 import plotly.express as px
 
 # Load your datasets
-submission_format = pd.read_csv('../data/submission_format.csv')
-training_set_features = pd.read_csv('../data/training_set_features.csv')
-training_set_labels = pd.read_csv('../data/training_set_labels.csv')
-test_set_features = pd.read_csv('../data/test_set_features.csv')
+submission_format = pd.read_csv('data/submission_format.csv')
+training_set_features = pd.read_csv('data/training_set_features.csv')
+training_set_labels = pd.read_csv('data/training_set_labels.csv')
+test_set_features = pd.read_csv('data/test_set_features.csv')
 
 # Create a boolean DataFrame of missing values for all columns except 'respondent_id'
 missing_values = training_set_features.drop(columns=['respondent_id']).isna()
@@ -29,7 +29,7 @@ The goal of this project is to predict how likely individuals are to receive the
 The dataset includes characteristics like behavioral responses, opinions, and personal information gathered from respondents. 
          
 Whilst doing Exploratory Data Analysis, we noticed some of the features have Missing Values, with implications for how we understand the data. 
-Missing Values are an important feature of many real-life datasets in the wild. Missing Values are otherwise known as Not Available (NA) or Not A Number (NaN) values. 
+Missing Values are an important feature of many real-life datasets in the wild. Missing Values are otherwise known as Not Available (`NA`) or Not A Number (`NaN`) values. 
 
 This heatmap shows the presence of `NaN` values in the dataset according to the column (feature) variables. Do you notice any patterns?
 """)
