@@ -8,6 +8,10 @@ The dataset includes characteristics like behavioral responses, opinions, and pe
 
 ![Heatmap of Missing Values](images/nan_heatmap.png)
 
+## Usage
+
+To interact with the Missing Values, we built a simple Streamlit app. Click [here](https://flu-shot-learning.streamlit.app/) to discover patterns in the Missing Values!
+
 ## Predictive Models
 We employ machine learning models to predict the likelihood of vaccine uptake. Specifically, **logistic regression** models are used, addressing class imbalances where necessary. We used the [**Area Under the Receiver Operating Characteristic** (AUROC)](https://en.wikipedia.org/wiki/Receiver_operating_characteristic) metric for evaluating the model.
 
@@ -18,7 +22,7 @@ We employ machine learning models to predict the likelihood of vaccine uptake. S
 - `submissions/` - Prediction files ready for submission to the competition.
 - `images/` - Visualizations generated during analysis, including the heatmap of missing values.
 
-## Usage
+## Development
 Clone the repository, install the required packages listed in `requirements.txt`, and run the Jupyter notebooks to replicate the analysis and predictions.
 
 ## Contributions
